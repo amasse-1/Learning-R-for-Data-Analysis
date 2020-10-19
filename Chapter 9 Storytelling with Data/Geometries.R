@@ -1,0 +1,5 @@
+frame<-read.csv("DataSet-ProfSalaries.csv")
+library(ggplot2)
+
+ggplot(data=frame, aes(x=salary))+geom_histogram(aes(fill=rank), color="Black", bins=20)
+

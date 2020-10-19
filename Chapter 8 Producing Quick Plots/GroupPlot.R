@@ -1,0 +1,5 @@
+frame<-read.csv("auto.csv")
+
+library(ggplot2)
+Cylinders<-factor(frame$cyl)
+qplot(mpg, wt, data=frame, size=I(5), shape=Cylinders, color=Cylinders)
